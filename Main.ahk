@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 ;-------------------Snapshot Key--------------------
-;In Keychron K2C3, for some reason snapshot key is calling Win+Alt+4.Which in AHK can be represented as #+4
+;In Keychron K2C3, for some reason snapshot key is calling Win+Alt+4. Which in AHK can be represented as #+4
 ;Ctrl+Home is configured in Snagit to take an screenshot.
 
 #+4::
@@ -40,7 +40,7 @@ return
 
 ::/loop::
 startTime=%A_Hour%:%A_Min%
-MsgBox, , , Go!, 3
+MsgBox, , , Start!, 3
 Loop, 2
 {
 	; Your repetitive task here
