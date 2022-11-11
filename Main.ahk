@@ -4,12 +4,11 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
-;-------------------Snapshot Key--------------------
-;In Keychron K2C3, for some reason snapshot key is calling Win+Alt+4. Which in AHK can be represented as #+4
-;Ctrl+Home is configured in Snagit to take an screenshot.
+;-------------------Screen capture--------------------
+;In Keychron K2C3 version, Screen capture key sends Win+Alt+4. Which in AHK can be represented as #+4
 
 #+4::
-Send {Control Down}{Shift Down}{Home Down}{Control Up}{Shift Up}{Home Up}
+Send #ShiftS ; Windows + Shift + S
 return
 
 
@@ -17,12 +16,12 @@ return
 
 ; COPY
 XButton2::
-Send, {Control Down} c {Control Up}
+Send, {Control Down}c{Control Up}
 return
 
 ; PASTE
 XButton1::
-Send, {Control Down} v {Control Up}
+Send, {Control Down}v{Control Up}
 return
 
 
