@@ -8,7 +8,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;In Keychron K2C3 version, Screen capture key sends Win+Alt+4. Which in AHK can be represented as #+4
 
 #+4::
-Send #ShiftS ; Windows + Shift + S
+Send {LWin Down}{Shift Down}s{LWin Up}{Shift Up} ; Windows + Shift + S
 return
 
 
