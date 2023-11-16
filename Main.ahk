@@ -1,14 +1,9 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-; #Warn  ; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-
-
+﻿; Requires AutoHotkey V1
 ;-------------------Screen capture--------------------
 ;In Keychron K2C3 version, Screen capture key sends Win+Alt+4. Which in AHK can be represented as #+4
 
 #+4::
-Send {LWin Down}{Shift Down}s{LWin Up}{Shift Up} ; Windows + Shift + S
+Send {Alt Down}{Shift Down}4{Alt Up}{Shift Up} ; Alt + Shift + 4 (Configured in Lightshot)
 return
 
 
